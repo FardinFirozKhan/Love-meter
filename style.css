@@ -1,0 +1,31 @@
+body{
+    width: auto;
+    color: aliceblue;
+    text-align: center;
+    background-image: url("img/holiday-valentine-s-day-couple-heart-love-hd-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
+.main{
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 50%;
+    padding:30px;
+    border: 2px solid #DF0054;
+    font-size: medium;
+    background-color: #DF0054;
+    border-radius: 20px;
+    box-shadow: 15px 10px 15px 15px #800232;
+}
+input{
+    width: 40%;
+    border-radius: 5px;
+}
+button{
+    color: white;
+    padding: 2%;
+    border: 1px solid #800232;
+    border-radius: 10px;
+    background-color: #800232;
+}

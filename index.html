@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Meter</title>
+</head>
+<body>
+    <div class="main">
+            <h1>Love Meter</h1>
+            <h3>Test your love here and express to your partner</h3>
+            <p>Your Name</p>
+            <input type="text" name="" id="mainName" value="" required>
+            <p>Your Partner Name</p>
+            <input type="text" name="" id="partnerName" value="" required>
+            <br>
+            <br>
+            <button onclick="calculate()">Calculate</button>    
+            <div class="result">
+            <h3 id="show"></h3>
+            <p id="advice"></p>
+    </div>
+    </div>
+
+    <script>
+        
+        function calculate(){
+            const mainName=document.getElementById("mainName").value;
+            const partnerName=document.getElementById("partnerName").value;
+            if(mainName=="" && partnerName==""){
+                alert("Please input a Value");
+            }
+           else{
+            const number=Math.floor(Math.random() * 101);
+            document.getElementById("show").innerHTML=mainName+" and "+partnerName+ " both your Love Parcentage is "+number+"%";
+            if(number<50){
+                document.getElementById("advice").innerHTML=mainName+" and "+partnerName+" your Love percentage is too much poor.Please be serious in your relationship";
+            }
+            else if(number>50 && number<80){
+                document.getElementById("advice").innerHTML=mainName+" and "+partnerName+" your Love percentage is avarage.You have to be more serious in your relationship";
+            }
+            
+            else{
+                document.getElementById("advice").innerHTML=mainName+" and "+partnerName+" Congratulation both of you are deeply in Love.";
+            }
+           }
+                
+        }
+        
+    </script>
+
+</body>
+</html>
